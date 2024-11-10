@@ -1,5 +1,5 @@
 import unittest
-from Calculator import *
+from calculator import *
 class test_calculator(unittest.TestCase):
   def TestAdd(self):
     self.assertequal(Add(3,7),10)
