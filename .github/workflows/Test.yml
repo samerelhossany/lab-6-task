@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: '3.x'
       - name: Run tests
-        run: python  TestCalculator
+        run: python  TestCalculator.py
   deploy:
     runs-on: windows-latest
     needs: test
