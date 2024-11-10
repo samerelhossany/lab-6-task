@@ -1,2 +1,2 @@
-# lab-5-task
+# lab-6-task
 lab task for testing cases 
