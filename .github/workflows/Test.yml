@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: '3.x'
       - name: Run tests
-        run: python -m unittest discover -s . -p "TestCalculator.py"
+        run: python -m unittest discover -s . -p "TestCalculator"
   deploy:
     runs-on: ubuntu-latest
     needs: test
