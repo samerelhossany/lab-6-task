@@ -1,7 +1,7 @@
 import unittest
 from calculator import *
 class test_calculator(unittest.TestCase):
-  def TestAdd(self):
+  def test_add(self):
     res1=add(3,7)
     res2=add(-1,1)
     self.assertEqual(res1,10)
