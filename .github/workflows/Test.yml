@@ -5,22 +5,27 @@ on:
     branches: ["main"]
   pull_request:
     branches: ["main"]
+
 jobs:
   test:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
 
-      - name: Set up Python enviroment
+      - name: Set up Python environment
         uses: actions/setup-python@v2
         with:
           python-version: '3.x'
+          
+      - name: List current directory
+        run: dir
+
       - name: Run tests
-        run: python  -m  unittest discover -s . -p "TestCalculator.py"
+        run: python -m unittest discover -s . -p "TestCalculator.py"
+
   deploy:
     runs-on: windows-latest
     needs: test
     steps:
       - name: Deploy application
         run: echo 'Deploying...'
-      
